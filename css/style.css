@@ -1,0 +1,52 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-image: url(https://phonoteka.org/uploads/posts/2022-02/1645372621_29-phonoteka-org-p-chernii-obemnii-fon-35.jpg);
+  background-repeat: no-repeat;
+}
+body .container {
+  position: relative;
+  margin: 200px auto;
+  width: 300px;
+  height: 300px;
+  perspective: 500px;
+}
+body .container .cube {
+  width: inherit;
+  height: inherit;
+  transform-style: preserve-3d;
+}
+body .container .cube .side {
+  position: absolute;
+  width: inherit;
+  height: inherit;
+  border: 10px double white;
+  font: normal 70px Arial;
+  text-align: center;
+  line-height: 300px;
+  color: white;
+  -webkit-backface-visibility: hidden;
+          backface-visibility: hidden;
+}
+body .container .cube .front {
+  transform: translateZ(150px);
+}
+body .container .cube .back {
+  transform: rotateY(180deg) translateZ(150px);
+}
+body .container .cube .right {
+  transform: rotateY(90deg) translateZ(150px);
+}
+body .container .cube .left {
+  transform: rotateY(-90deg) translateZ(150px);
+}
+body .container .cube .top {
+  transform: rotateX(90deg) translateZ(150px);
+}
+body .container .cube .bottom {
+  transform: rotateX(-90deg) translateZ(150px);
+}/*# sourceMappingURL=style.css.map */
